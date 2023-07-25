@@ -496,27 +496,57 @@ footer div p{
     main{
         display: flex;
         flex-direction: column;
+    }
 
+    .card-container{
+        display: flex;
+    }
+
+    .card-container .cards-box{
+        display: grid;
+        grid-template-areas: 
+            "card-1 card-2"
+            "card-3 card-4"; 
+    }
+
+    .card-1{
+        grid-area: card-1;
+    }
+
+    .card-2{
+        grid-area: card-2;
+    }
+
+    .card-3{
+        grid-area: card-3;
+    }
+
+    .card-4{
+        grid-area: card-4;
     }
 
     .card img{
-        width: 160px;
-        height: 160px;
+        width: 140px;
+        height: 140px;
         border-radius: 20px;
     }
     
-    .card p{
+    .card h3{
         font-size: 18px;
+    }
+
+    .card p{
+        font-size: 15px;
+    }
+    
+    .card-container .btn-shop{
+        font-size: 14px;
     }
     
      .card-container .btn-shop{
         font-size: 16px;
     }
     
-    .card-container .cards-box{
-        display: flex;
-        flex-direction: column;
-    }
 
     form{
         padding: 0;
@@ -589,7 +619,7 @@ footer div p{
     
 }
 
- @media(max-width: 450px) and (min-width: 320px) {
+ /* @media(max-width: 450px) and (min-width: 320px) {
     
     .navbar ul{
         display: flex;
@@ -777,4 +807,4 @@ footer div p{
         font-size: 16px;
         text-align: center;
     }
- }
+ } */
